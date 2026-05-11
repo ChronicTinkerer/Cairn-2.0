@@ -9,3 +9,15 @@
 ## X-License: MIT
 
 embeds\LibStub\LibStub.lua
+CairnAddon\Cairn-Addon.lua
+CairnDB\Cairn-DB.lua
+CairnEvents\Cairn-Events.lua
+CairnSlash\Cairn-Slash.lua
+CairnLocale\Cairn-Locale.lua
+CairnLog\Cairn-Log.lua
+CairnHooks\Cairn-Hooks.lua
+CairnTimer\Cairn-Timer.lua
+CairnCallback\Cairn-Callback.lua
+CairnUtil\Cairn-Util.lua
+CairnUtil\AF_MD5.lua
+CairnUtil\Cairn-Util-Hash.lua

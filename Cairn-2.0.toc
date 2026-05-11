@@ -18,17 +18,20 @@
 #       LibStub is idempotent)
 embeds\LibStub\LibStub.lua
 
-# ----- Libraries load here as they ship. Initial scaffold loads none —
-#       each lib's load line is added when its first file lands.
-# CairnAddon\Cairn-Addon.lua
-# CairnDB\Cairn-DB.lua
-# CairnSlash\Cairn-Slash.lua
-# CairnEvents\Cairn-Events.lua
-# CairnLocale\Cairn-Locale.lua
-# CairnLog\Cairn-Log.lua
-# CairnUtil\Cairn-Util.lua
-# CairnHooks\Cairn-Hooks.lua
-# CairnTimer\Cairn-Timer.lua
+# ----- Libraries load here as they ship.
+CairnAddon\Cairn-Addon.lua
+CairnDB\Cairn-DB.lua
+CairnEvents\Cairn-Events.lua
+CairnSlash\Cairn-Slash.lua
+CairnLocale\Cairn-Locale.lua
+CairnLog\Cairn-Log.lua
+CairnHooks\Cairn-Hooks.lua
+CairnTimer\Cairn-Timer.lua
+CairnCallback\Cairn-Callback.lua
+CairnUtil\Cairn-Util.lua
+CairnUtil\AF_MD5.lua
+CairnUtil\Cairn-Util-Hash.lua
+
+# Future libs (planned, not yet shipped):
 # CairnSettings\Cairn-Settings.lua
-# CairnCallback\Cairn-Callback.lua
 # CairnMedia\Cairn-Media.lua
