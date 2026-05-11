@@ -1,0 +1,59 @@
+# Cairn-2.0 .gitignore
+#
+# Rule: track only what the addon needs to FUNCTION at runtime, plus
+# the release-pipeline files the GitHub Actions workflow uses
+# (.pkgmeta, .github/) and minimal public-facing docs
+# (README, LICENSE, CHANGELOG). Everything else stays out of the
+# public repo.
+
+# All dev-local artifacts (planning docs, scratch, caches, dev tools) live
+# under /.dev/ at the repo root. One folder, one ignore line.
+.dev/
+
+# ----- OS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ----- Editors / IDEs
+.vscode/
+.idea/
+.cursor/
+.claude/
+*.code-workspace
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# ----- Misc / build artifacts
+*.bak
+*.orig
+*.tmp
+__pycache__/
+*.pyc
+
+# ----- Internal docs that should not ship publicly. The .dev/ rule above
+#       catches most of this; the explicit entries below are for any docs
+#       that someone might accidentally drop at repo root.
+SESSION_NOTES.md
+ARCHITECTURE.md
+ROADMAP.md
+OBJECTIVES.md
+TODO.md
+NOTES.md
+
+# Allow only specific named public docs:
+!README.md
+!CHANGELOG.md
+!LICENSE
+!CONTRIBUTING.md

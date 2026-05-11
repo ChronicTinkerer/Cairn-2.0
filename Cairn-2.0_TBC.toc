@@ -1,0 +1,11 @@
+## Interface: 20505
+## Title: Cairn-2.0
+## Notes: A modern alternative to Ace3 for WoW addon authors. Composable libraries with a flagship Settings library that bridges to Blizzard's native Settings panel and registers EditMode anchors.
+## Author: ChronicTinkerer
+## Version: 1
+## SavedVariables: CairnDB
+## LoadOnDemand: 0
+## X-Curse-Project-ID:
+## X-License: MIT
+
+embeds\LibStub\LibStub.lua

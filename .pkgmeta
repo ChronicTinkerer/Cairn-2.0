@@ -1,0 +1,30 @@
+# Cairn-2.0 packaging manifest.
+# Consumed by BigWigsMods/packager v2 (see .github/workflows/release.yml).
+# Reference: https://github.com/BigWigsMods/packager
+
+package-as: Cairn-2.0
+
+ignore:
+  - .dev
+  - .vscode
+  - .idea
+  - SESSION_NOTES.md
+  - ARCHITECTURE.md
+  - ROADMAP.md
+  - OBJECTIVES.md
+  - "*.bat"
+  - "*.py"
+  - "*.ps1"
+  # Wago rejects packages whose TOC filenames carry a flavor suffix it
+  # doesn't recognize ("We found different named TOC files in your addon").
+  # `_XPTR` is not a WoW-canonical flavor (Mainline / Mists / TBC /
+  # Vanilla / Wrath / Cata are). XPTR support stays in our local working
+  # tree for dev installs but never enters the published zip.
+  - "*_XPTR.toc"
+
+# We do NOT use @project-version@ substitution; the version field carries
+# a sequential build-number bumped by release.ps1. The packager leaves
+# hardcoded `## Version:` lines untouched.
+
+# License is MIT; ship it inside the package so embedders see it.
+# (LICENSE is at the repo root and lives inside package-as by default.)

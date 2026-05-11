@@ -1,0 +1,13 @@
+## Interface: 50503
+## Title: Cairn-2.0
+## Notes: A modern alternative to Ace3 for WoW addon authors. Composable libraries (Addon, DB, Slash, Events, Locale, Log, Util, Hooks, Timer, Settings, Callback, Media) with a flagship Settings library that bridges to Blizzard's native Settings panel and registers EditMode anchors.
+## Author: ChronicTinkerer
+## Version: 1
+## SavedVariables: CairnDB
+## LoadOnDemand: 0
+## X-Curse-Project-ID:
+## X-License: MIT
+# NOTE: X-Wago-ID and X-WoWI-ID intentionally omitted until the per-flavor
+#       projects are validated.
+
+embeds\LibStub\LibStub.lua

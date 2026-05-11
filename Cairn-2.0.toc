@@ -1,0 +1,34 @@
+## Interface: 120005,120007
+## Title: Cairn-2.0
+## Notes: A modern alternative to Ace3 for WoW addon authors. Composable libraries (Addon, DB, Slash, Events, Locale, Log, Util, Hooks, Timer, Settings, Callback, Media) with a flagship Settings library that bridges to Blizzard's native Settings panel and registers EditMode anchors. Hybrid distribution: works as a standalone shared addon OR LibStub-embedded.
+## Author: ChronicTinkerer
+## Version: 1
+## SavedVariables: CairnDB
+## LoadOnDemand: 0
+## X-Curse-Project-ID:
+## X-Wago-ID:
+## X-WoWI-ID:
+## X-License: MIT
+# CF / Wago / WoWI project IDs left blank until the projects are created.
+# Fill them in once Cairn-2.0 has been published.
+
+# ----- Vendored LibStub (only loaded when Cairn-2.0 runs as a standalone
+#       addon for development/testing; in production the consumer addon
+#       supplies its own LibStub via embeds and this is a no-op since
+#       LibStub is idempotent)
+embeds\LibStub\LibStub.lua
+
+# ----- Libraries load here as they ship. Initial scaffold loads none —
+#       each lib's load line is added when its first file lands.
+# CairnAddon\Cairn-Addon.lua
+# CairnDB\Cairn-DB.lua
+# CairnSlash\Cairn-Slash.lua
+# CairnEvents\Cairn-Events.lua
+# CairnLocale\Cairn-Locale.lua
+# CairnLog\Cairn-Log.lua
+# CairnUtil\Cairn-Util.lua
+# CairnHooks\Cairn-Hooks.lua
+# CairnTimer\Cairn-Timer.lua
+# CairnSettings\Cairn-Settings.lua
+# CairnCallback\Cairn-Callback.lua
+# CairnMedia\Cairn-Media.lua
